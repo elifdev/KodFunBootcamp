@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .mekan {
+            border-left: 10px solid #007AFF;
+        }
+
+        #memleket {
+            text-align: center;
+        }
+
+        #memleket::after {
+            content: "(DENEME)";
+            font-weight: bold;
+        }
+
+        div>p {
+            margin: 0 60px;
+            text-align: justify;
+            font-size: 80%;
+        }
+
+        div p {
+            font-family: " Comic Sans MS";
+        }
+
+        h1,
+        h2 {
+            background-color: black;
+            color: white;
+        }
+
+        /* tüm title attributelerini etkiler*/
+
+        [title] {
+            background-color: yellow;
+        }
+
+        /* sadece title attributeünü içeren li ögelerini etkiler*/
+        li[title] {
+            font-style: italic;
+        }
+
+        h2+p {
+            text-indent: 40px;
+            /*paragraf başı içeri girdi */
+        }
+
+        li:nth-child(odd) {
+            background-color: gainsboro;
+        }
+
+        li:nth-child(6) {
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+            font-family: arial;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px red;
+            color: rgb(75, 75, 218);
+        }
+    </style>
+</head>
+
+       <h1>Türkiye</h1>
+       <h2>Bursa</h2>
+
+       <p>Bursa, Türkiye'nin Marmara Bölgesi'nde yer alan, hem tarihi hem de doğal güzellikleriyle ünlü bir şehir. Osmanlı İmparatorluğu'nun ilk başkenti olan Bursa, tarihi dokusu ve mimarisiyle ziyaretçilerine adeta bir açık hava müzesi sunar. Ulucami, Yeşil Türbe ve Osman Gazi Türbesi gibi önemli tarihi yapılar, şehrin geçmişine ışık tutarken, geleneksel Osmanlı mimarisinin en güzel örneklerini sergiler. Ayrıca, şehrin çarşıları ve hanları da yüzyıllardır süregelen ticaret kültürünü ve zanaat geleneklerini günümüzde yaşatmaya devam eder.</p>
+       <p>Bursa, doğal güzellikleriyle de öne çıkan bir şehirdir. Uludağ, Türkiye'nin en önemli kış sporları merkezlerinden biri olup, kayak ve snowboard gibi aktiviteler için ideal bir yerdir. Bunun yanı sıra, yaz aylarında da doğa yürüyüşleri, kampçılık ve piknik gibi etkinlikler için Uludağ ve çevresi tercih edilir. Şehrin içinde yer alan Botanik Park ve Kültürpark gibi alanlar da doğayla iç içe vakit geçirmek isteyenler için kaçırılmaması gereken yerler arasındadır.</p>
+
+       <div>
+        <p>Bursa'nın gastronomi kültürü de oldukça zengindir. İskender kebabı, kestane şekeri ve pideli köfte gibi lezzetler, şehre özgü tatlar arasında yer alır. Bursa'nın mutfak kültürü, Osmanlı ve Anadolu lezzetlerinin harmanlanmasıyla oluşmuş ve günümüze kadar varlığını sürdürmüştür. Şehrin çarşı ve pazarlarında yerel lezzetleri tatmak ve geleneksel el sanatlarına göz atmak, ziyaretçilerin mutlaka deneyimlemesi gereken aktiviteler arasındadır.</p>
+
+        <section>
+            <p> Bursa lezzetlerinden biri<span title="reklam">Kestane Şekeri</span> en çok tercih edilenlerdir.</p>
+        </section>
+
+       </div>
+       <h3>İlçeleri</h3>
+       <ul>
+        <li title="Merkezi">Osmangazi </li>
+        <li>Yıldırım</li>
+        <li class="mekan" id="memleket">Nilüfer</li>
+        <li>Gemlik</li>
+        <li class="mekan">İnegöl</li>
+        <li>Mustafakemalpaşa</li>
+        <li>Orhangazi</li>
+        <li>Karacabey</li>
+        <li>Kestel</li>
+        <li>Gürsu</li>
+        <li>Yenişehir</li>
+        <li>İznik</li>
+        <li class="mekan">Mudanya</li>
+        <li>Orhaneli</li>
+        <li>Keles</li>
+        <li>Harmancık</li>
+        <li>Büyükorhan</li>
+      </ul>
+<body>
+
+</body>
+
+</html>

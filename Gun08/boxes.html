@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutu Mantığı</title>
+    <style>
+        /* div elementlerine aşağıdaki özellikleri taşıyacak şekilde css verin.
+    1. toplam yüksekliği 200 px
+    2. toplam genişliği 200px
+    3. arka plan rengi seç 
+    4. 20 px padding
+    5. 10px border
+    6. 15 px margin
+    7. yazı rengi beyaz*/
+
+        div {
+            box-sizing: border-box;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(132, 169, 239);
+            padding: 20px;
+            border: 10px solid rgb(223, 179, 174);
+            margin: 15px;
+            /* m15 → TAB */
+            color: white;
+            /* c:white → TAB */
+            float: left;
+            outline: 10px solid rgba(116, 83, 235, 0.678);
+            /* outline'ın hacmi yoktur, border gibi bir yüksekliği yoktur hesaplamaya dahil değildir ve border gibi diğer ögeleri itmez. */
+            /* display: flex;
+           align-items: center; → Dikey eksende ortalar.
+           justify-content: center; Yatay eksende ortalar.
+        */
+            /* outline-offset: 5px; → Outline ile border arasına mesafe koyar. */
+        }
+
+        main {
+            border: 10px solid rgb(121, 64, 242);
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--  Blok elementleri, "main" etiketi ile bir kapsayıcıya aldık. -->
+
+    <!-- PROBLEM: main kutusunun kenarlığı içindeki her şeyi çevrelemesi gerekirken neden şu an çevrelemiyor? Float kullanıldığı için, "main" içindeki kutuların etrafını sarmaz. Bu durum float öğelerin normal akıştan çıkmasından kaynaklanır. Çözüm float konusu işlenirken verilecek. -->
+
+    <!--  "main" tüm div'leri içine alan büyük bir kutu olarak yerleştirildi. -->
+    <!-- div*10>{Box $} -->
+    <!-- block elementleri block olmayan bi element içine aldık -->
+    <main>
+        <div>kutu 1</div>
+        <div>kutu 2</div>
+        <div>kutu 3</div>
+        <div>kutu 4</div>
+        <div>kutu 5</div>
+        <div>kutu 6</div>
+        <div>kutu 7</div>
+        <div>kutu 8</div>
+        <div>kutu 9</div>
+        <div>kutu 10</div>
+    </main>
+</body>
+
+</html>

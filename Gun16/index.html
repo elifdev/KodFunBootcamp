@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p><!-- js ile değiştirmek --></p>
+
+    <script>
+        // alert("hooop.... ");
+        // alert("Hoşgeldin :)");
+        /* Programlama komutların belli bir sırada belirli bir amaç için çalıştırılması
+        jste html dökümanına karşılık gelen document adında bir nesne vardır. belirtilen sayfada ki htmlin tüm elementlerine ulaşabiliriz */
+        // sayfadaki ilk p elementine eriş ve içindeki metni değiş 
+        // document.querySelector("p").textContent = "js ile değiştirildi  ";
+        let ilkParag = document.querySelector("p");
+        ilkParag.textContent = "js ile değiştirildi  ";
+
+        ilkParag.style.color = "purple";
+        document.body.style.background = "linear-gradient(to right , pink , white )";
+        
+    </script>
+</body>
+</html>

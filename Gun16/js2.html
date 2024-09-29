@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Giriş II</h1>
+    <p>Bir HTML dökümanına js 3 şekilde dahil edebiliriz</p>
+
+    <!-- SCRIPT TAGLARI ARASINA  -->
+     <script>
+        let x = 2 + 2;
+        document.write("<hr>");
+        document.write(x);
+     </script>
+     <!-- Harici dosya -->
+      <script src="kod.js"></script>
+
+      <!-- inline javascript  -->
+       <button onclick="alert('Tıklandı')">Tıklama</button>
+       <hr>
+       <button id="minnos" onmouseenter="document.getElementById('minnos').textContent = 'Şaka'">Dikkat!</button>
+</body>
+</html>

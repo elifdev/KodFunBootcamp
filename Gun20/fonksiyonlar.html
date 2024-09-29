@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonksiyonlar</title>
+</head>
+<body>
+    <script src="../ortak/yaz.js"></script>
+
+    <script>
+
+        /*
+        Dört Çeşit Fonksiyonu Örnekleyeli
+        1. Parametre Almayan Değer Döndürmeyen
+        2. Parametre Alamyan Değer Döndüre
+        3. Parametre Alan Değer Döndürmeyen
+        4. Parametre Alan Değer Döndüren
+        */
+
+        // parametre alan ve değer döndüren
+        function birFazlasi(x) {
+            return x + 1;
+        }
+
+        let sayi = 3;
+        sayi = birFazlasi(sayi);
+        ciz(sayi);
+
+        // parametre alan değer döndürmeyen
+        function arkaPlaniBoya (renk){
+            document.body.style.background = renk;
+        }
+
+        arkaPlaniBoya("pink")
+
+        // parametre almayan değer döndüren 
+       function ayinGunu() {
+        let suAn = new Date();
+        return suAn.getDate();
+       }
+
+        let kacinci = ayinGunu();
+        ciz("bugün ayın " + kacinci + "günüdür." );
+
+        //parametre almyan değer döndürmeyen 
+
+        function ekranaTarihiVeSaatiYazdir(){
+  
+            let suAn = new Date();
+            ciz(suAn.toLocaleString("tr"));
+        }
+
+        ekranaTarihiVeSaatiYazdir();
+
+        
+
+        
+    </script>
+</body>
+</html>
